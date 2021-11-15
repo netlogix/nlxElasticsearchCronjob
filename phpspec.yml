@@ -1,0 +1,6 @@
+suites:
+  default:
+    namespace: nlxElasticsearchCronjob
+    psr4_prefix: nlxElasticsearchCronjob
+    spec_path: ./
+    src_path: ./
