@@ -25,6 +25,9 @@ class Cronjob implements SubscriberInterface
         $this->kernel = $kernel;
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public static function getSubscribedEvents()
     {
         return [
