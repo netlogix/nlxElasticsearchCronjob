@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">nlxElasticsearchCronjob</label>
     <label lang="en">nlxElasticsearchCronjob</label>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <copyright>(c) by netlogix GmbH &amp; Co. KG</copyright>
     <license>Proprietary</license>
     <link>https://websolutions.netlogix.de/</link>
@@ -14,5 +14,9 @@
     <changelog version="1.0.0">
         <changes lang="de">Erste Veröffentlichung</changes>
         <changes lang="en">Initial Release</changes>
+    </changelog>
+    <changelog version="1.0.1">
+        <changes lang="de">Den korrekten Namespace benutzen</changes>
+        <changes lang="en">Use correct namespace</changes>
     </changelog>
 </plugin>
