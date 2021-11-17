@@ -7,7 +7,7 @@ declare(strict_types=1);
  * @copyright netlogix GmbH & Co. KG
  */
 
-namespace nlxelasticsearchcronjob\Subscriber;
+namespace nlxElasticsearchCronjob\Subscriber;
 
 use Enlight\Event\SubscriberInterface;
 use Shopware\Components\Console\Application;
