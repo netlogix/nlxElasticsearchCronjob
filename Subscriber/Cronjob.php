@@ -63,7 +63,7 @@ class Cronjob implements SubscriberInterface
         $command->run($input, new NullOutput());
 
         $input = new ArrayInput([
-            'command' => 'sw:es:index:cleanup',
+            'command' => 'sw:es:backlog:cleanup',
         ]);
         $command->run($input, new NullOutput());
     }
