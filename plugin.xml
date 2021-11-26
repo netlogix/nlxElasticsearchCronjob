@@ -20,7 +20,7 @@
         <changes lang="en">Use correct namespace</changes>
     </changelog>
     <changelog version="1.0.2">
-        <changes lang="de">Den korrekten cleanup backlog Befehl benutzen</changes>
+        <changes lang="de">Den korrekten cleanup backlog Befehl ausführen</changes>
         <changes lang="en">Use correct command to cleanup backlog</changes>
     </changelog>
 </plugin>
