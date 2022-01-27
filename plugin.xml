@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">nlxElasticsearchCronjob</label>
     <label lang="en">nlxElasticsearchCronjob</label>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <copyright>(c) by netlogix GmbH &amp; Co. KG</copyright>
     <license>Proprietary</license>
     <link>https://websolutions.netlogix.de/</link>
@@ -30,5 +30,9 @@
     <changelog version="1.1.0">
         <changes lang="de">Feature hinzugefügt, um Anpassungen sofort nach Elasticsearch zu übertragen</changes>
         <changes lang="en">Added feature to push changes instantly to Elasticsearch</changes>
+    </changelog>
+    <changelog version="1.2.0">
+        <changes lang="de">Anpassungen am Artikel gleich nach Elasticsearch übertragen</changes>
+        <changes lang="en">Push article changes instantly to Elasticsearch</changes>
     </changelog>
 </plugin>

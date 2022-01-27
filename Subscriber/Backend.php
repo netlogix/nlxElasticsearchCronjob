@@ -17,6 +17,7 @@ class Backend implements SubscriberInterface
 {
     private const ENABLED_CATEGORY_ACTIONS = ['addCategoryArticles', 'removeCategoryArticles'];
     private const ENABLED_MANUAL_SORTING_ACTIONS = ['assignPosition', 'removePosition', 'resetCategory'];
+    private const ENABLED_ARTICLE_ACTIONS = ['setPropertyList', 'saveDetail', 'delete'];
 
     /** @var bool */
     private $isFeatureEnabled;
@@ -41,6 +42,7 @@ class Backend implements SubscriberInterface
         return [
             'Enlight_Controller_Action_PostDispatchSecure_Backend_Category' => 'onBackendCategory',
             'Enlight_Controller_Action_PostDispatchSecure_Backend_ManualSorting' => 'onManualSorting',
+            'Enlight_Controller_Action_PostDispatchSecure_Backend_Article' => 'onBackendArticle',
             'Enlight_Controller_Front_DispatchLoopShutdown' => 'onTerminate',
         ];
     }
@@ -60,6 +62,16 @@ class Backend implements SubscriberInterface
         $actionName = $args->getRequest()->getActionName();
 
         if (false === $this->isFeatureEnabled || false === \in_array($actionName, self::ENABLED_MANUAL_SORTING_ACTIONS)) {
+            return;
+        }
+        $this->syncBacklog = true;
+    }
+
+    public function onBackendArticle(\Enlight_Controller_ActionEventArgs $args): void
+    {
+        $actionName = $args->getRequest()->getActionName();
+
+        if (false === $this->isFeatureEnabled || false === \in_array($actionName, self::ENABLED_ARTICLE_ACTIONS)) {
             return;
         }
         $this->syncBacklog = true;
