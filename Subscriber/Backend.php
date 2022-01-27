@@ -59,7 +59,7 @@ class Backend implements SubscriberInterface
     {
         $actionName = $args->getRequest()->getActionName();
 
-        if (false === $this->isFeatureEnabled || false === in_array($actionName, self::ENABLED_BACKEND_ACTIONS)) {
+        if (false === $this->isFeatureEnabled || false === \in_array($actionName, self::ENABLED_BACKEND_ACTIONS)) {
             return;
         }
         $this->syncBacklog = true;
