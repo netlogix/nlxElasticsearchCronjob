@@ -20,6 +20,7 @@
         <!-- Subscriber -->
         <service id="nlx.elasticsearch_cronjob.subscriber.cronjob" class="nlxElasticsearchCronjob\Subscriber\Cronjob">
             <argument type="expression">service('kernel')</argument>
+            <argument type="service" id="nlx_elasticsearch_cronjob.logger"/>
             <tag name="shopware.event_subscriber" />
         </service>
 
