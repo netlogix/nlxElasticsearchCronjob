@@ -27,12 +27,12 @@ jobs:
                   php-version: ${{ matrix.php-version }}
                   tools: composer:v1
 
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v7
               with:
                   clean: false
 
             - name: Cache composer
-              uses: actions/cache@v2
+              uses: actions/cache@v6
               with:
                   path: ~/vendor/
                   key: php-${{ matrix.php-version }}-shopware-${{ matrix.shopware-version }}-composer-${{ hashFiles('composer.json') }}
