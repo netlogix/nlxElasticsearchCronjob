@@ -8,7 +8,7 @@ This plugin adds elasticsearch cronjobs to synchronize data with the database
 
 ### phpspec
 
-    $ vendor/bin/phpspec-standalone.php7.4.phar
+    $ bin/phpspec-standalone.php.phar
 
 ## License
 
