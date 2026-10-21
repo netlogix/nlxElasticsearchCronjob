@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">nlxElasticsearchCronjob</label>
     <label lang="en">nlxElasticsearchCronjob</label>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <copyright>(c) by netlogix GmbH &amp; Co. KG</copyright>
     <license>Proprietary</license>
     <link>https://websolutions.netlogix.de/</link>
@@ -42,5 +42,9 @@
     <changelog version="1.3.0">
         <changes lang="de">Fehlerbehandlung im Cronjob hinzugefügt</changes>
         <changes lang="en">Add error handling in cronjob</changes>
+    </changelog>
+    <changelog version="1.3.1">
+        <changes lang="de">PHP-Constraint erlaubt alle PHP 8 Versionen</changes>
+        <changes lang="en">PHP constraint allows all PHP 8 versions</changes>
     </changelog>
 </plugin>
