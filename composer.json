@@ -28,6 +28,11 @@
     },
     "config": {
         "sort-packages": true,
+        "policy": {
+            "advisories": {
+                "block": false
+            }
+        },
         "standalone-build-tools": {
             "phpspec-standalone.php7.4.phar": "http://build-tools.cloud.solutiondrive.de/phar/phpspec-standalone.php7.4.phar",
             "phpspec-standalone.php7.3.phar": "http://build-tools.cloud.solutiondrive.de/phar/phpspec-standalone.php7.3.phar",
