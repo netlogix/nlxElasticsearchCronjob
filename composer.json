@@ -27,6 +27,9 @@
         "solutiondrive/standalone-build-tools": "^2.0"
     },
     "config": {
+        "allow-plugins": {
+            "solutiondrive/standalone-build-tools": true
+        },
         "sort-packages": true,
         "policy": {
             "advisories": {
